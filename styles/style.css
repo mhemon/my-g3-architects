@@ -1,0 +1,162 @@
+
+/* fonts code */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+/* universal code */
+
+*{
+    margin: 0;
+}
+
+:root {
+    --primary: #FF900E;
+  }
+
+.common{
+    padding-left: 128px;
+    padding-top: 50px;
+    padding-right: 128px;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+main{
+    background: rgba(255, 144, 14, 0.1);
+    padding-bottom: 45px;
+}
+
+/* common style */
+
+.title{
+    font-size: 35px;
+}
+
+.btn{
+    background: var(--primary);
+    border-radius: 8px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* header code  */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header>ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* banner code */
+
+.banner-content{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.banner-subtitle{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.banner-btn{
+    padding: 15px 25px;
+}
+
+.banner-content>img{
+    width: 100%;
+    margin-top: 50px;
+    background-size: cover;
+}
+
+/* features section */
+
+.features-container{
+    display: flex;
+    flex: 1;
+    gap: 70px;
+    align-items: center;
+}
+
+.feature-images{
+    flex: 50%;
+}
+
+.feature-content{
+    flex: 50%;
+}
+
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.feature-images>img{
+    width: 100%;
+}
+
+.feature-title>.span1{
+    color: #727272;
+    font-weight: 500;
+}
+
+.feature-title>.span2{
+    color: var(--primary);
+}
+
+/* mobile design */
+@media screen and (max-width:576px) {
+    .header{
+        flex-direction: column;
+    }
+    .header>ul{
+        flex-direction: column;
+    }
+    .common{
+        padding: 5px;
+    }
+    .banner-content{
+        margin-top: 10px;
+    }
+    .features-container{
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    .feature-images{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+}
+
+/* tablet design */
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+}
