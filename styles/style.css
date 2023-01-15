@@ -130,6 +130,114 @@ main{
     color: var(--primary);
 }
 
+/* more feature style */
+
+
+.more-features-container{
+    display: flex;
+    align-items: center;
+    gap: 54px;
+}
+
+.more-feature-content{
+    flex: 50%;
+}
+
+.more-feature-image{
+    flex: 50%;
+}
+
+.more-feature-image>img{
+    width: 100%;
+}
+
+.box{
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(200, 196, 196, 0.412);
+    padding: 20px 10px;
+}
+
+.box>.box-title{
+    font-size: 16px;
+}
+
+.box>.box-subtitle{
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+}
+
+.more-feature-image-btn{
+    position: relative;
+    top: -70px;
+}
+
+.more-feature-image-btn>button{
+    padding: 10px;
+}
+
+/* facts-container */
+
+.facts-container{
+    width: 50%;
+}
+
+/* award section */
+
+.award-container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.award{
+    border: 1px solid var(--primary);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.award>h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.award>p{
+    font-weight: 600;
+    font-size: 12px;
+    color: #727272;
+}
+
+/* sponsor section */
+
+.sponsor-container{
+    text-align: center;
+}
+
+.sponsor-logo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sponsor-logo>img{
+    height: 40px;
+}
+
+/* footer design */
+
+footer{
+    margin-bottom: 40px;
+}
+
+.footer-bg{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+
 /* mobile design */
 @media screen and (max-width:576px) {
     .header{
@@ -153,10 +261,38 @@ main{
         grid-template-columns: repeat(1,1fr);
         row-gap: 20px;
     }
+    .more-features-container{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .facts-container{
+        width: calc(100% - 10px);
+    }
+    .award-container{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .sponsor-container{
+        margin-top: 20px
+    }
+    .sponsor-logo{
+        flex-direction: column;
+        gap: 20px;
+    }
+    footer{
+        text-align: center;
+    }
 }
 
 /* tablet design */
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    
+    .title{
+        font-size: 20px;
+    }
+    .sponsor-logo{
+        gap: 35px;
+        flex-wrap: wrap;
+    }
 }
