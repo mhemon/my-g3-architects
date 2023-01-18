@@ -222,14 +222,14 @@ main{
     text-align: center;
 }
 
-.sponsor-logo{
+.sponsor-icon{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.sponsor-logo>img{
+.sponsor-icon>img{
     height: 40px;
 }
 
@@ -308,7 +308,7 @@ footer{
     .sponsor-container{
         margin-top: 20px
     }
-    .sponsor-logo{
+    .sponsor-icon{
         flex-direction: column;
         gap: 20px;
     }
@@ -327,7 +327,7 @@ footer{
     .title{
         font-size: 20px;
     }
-    .sponsor-logo{
+    .sponsor-icon{
         gap: 35px;
         flex-wrap: wrap;
     }
